@@ -8,7 +8,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-
+        <h1>Airbnb</h1>
     </div>
   )
 }
