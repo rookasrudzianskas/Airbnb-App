@@ -7,8 +7,6 @@ import { format } from "date-fns";
 
 const Search = ({searchResults}) => {
 
-    console.log("RESULTS;");
-    console.log(searchResults);
 
     const router = useRouter();
 
