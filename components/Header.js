@@ -55,6 +55,7 @@ const Header = () => {
             <div>
                 <DateRangePicker
                     ranges={[selectionRange]}
+                    minDate={new Date()}
                 />
             </div>
             )}
