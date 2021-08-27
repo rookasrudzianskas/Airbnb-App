@@ -76,7 +76,7 @@ const Header = () => {
                     <input
                         value={numberOfGuests}
                         onChange={(e) => setNumberOfGuests(e.target.value)}
-                        type="number" className="w-12 pl-2 text-lg outline-none text-red-400 placeholder-red-400" min="1" placeholder="1"/>
+                        type="number" className="w-12 pl-2 text-lg outline-none text-red-400 placeholder-red-400" min={1} placeholder="1"/>
                 </div>
             </div>
             )}
