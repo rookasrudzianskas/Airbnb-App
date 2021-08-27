@@ -41,7 +41,9 @@ const Header = () => {
 
 
             {searchInput && (
-            <div>HELLO WORLD</div>
+            <div>
+
+            </div>
             )}
 
         </header>
