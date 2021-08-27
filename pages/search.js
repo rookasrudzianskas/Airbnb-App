@@ -2,9 +2,19 @@ import React from 'react';
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import {useRouter} from "next/router";
 
 const Search = () => {
+
+    const router = useRouter();
+
+    // this is to access the router variables
+    // console.log(router.query);
+
+
     return (
+
+
         <div className="scrollbar-hide">
             <Head>
                 <title>Airbnb search results</title>
