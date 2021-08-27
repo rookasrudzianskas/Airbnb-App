@@ -28,5 +28,7 @@ export default function Home() {
 // static side rendering, works just in the pages folder
 
 export async function getStaticProps() {
-
+    const exploreData = await fetch('https://links.papareact.com/pyp').then((res) => {
+        res.json()
+    });
 }
