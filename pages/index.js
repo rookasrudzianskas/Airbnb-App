@@ -25,7 +25,7 @@ export default function Home() {
 }
 
 
-// static side rendering
+// static side rendering, works just in the pages folder
 
 export async function getStaticProps() {
 
