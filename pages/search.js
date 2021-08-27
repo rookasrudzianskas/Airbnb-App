@@ -10,6 +10,7 @@ const Search = () => {
 
     // this is to access the router variables
     // console.log(router.query);
+    const {location, startDate, endDate, numberOfGuests} = router.query;
 
 
     return (
