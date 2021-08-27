@@ -19,7 +19,7 @@ const Map = () => {
 
             {...viewport}
 
-// lets to scroll in the map
+            // lets to scroll in the map
             onViewportChange={(nextViewport) => setViewport(nextViewport) }
         >
 
