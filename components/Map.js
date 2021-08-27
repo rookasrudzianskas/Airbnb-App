@@ -69,7 +69,7 @@ const Map = ({searchResults}) => {
                             closeOnClick={true}
                         >
 
-                            <div className="w-48 h-24 bg-red-500 ">
+                            <div className="w-48 h-24 ">
                                 <div className="h-12 w-12">
                                 <p className="truncate z-100 text-white">{result.title}</p>
                                     <Image
