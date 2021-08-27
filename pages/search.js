@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import {useRouter} from "next/router";
 import { format } from "date-fns";
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
 
 const Search = ({searchResults}) => {
 
@@ -91,6 +92,9 @@ const Search = ({searchResults}) => {
 
                 </section>
 
+                <section className="hidden xl:inline-flex">
+                    <Map />
+                </section>
 
             </main>
 
