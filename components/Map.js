@@ -5,13 +5,6 @@ import getCenter from "geolib/es/getCenter";
 
 const Map = ({searchResults}) => {
 
-    const [viewport, setViewport] = useState({
-        width: "100%",
-        height: '100%',
-        latitude: 37.7577,
-        longitude: -122.4376,
-        zoom: 11,
-    });
 
     // transform the searchResults object, to the object for the lat and long object.
     //     { latitude: 52.516272, longitude: 13.377722 },
@@ -24,8 +17,17 @@ const Map = ({searchResults}) => {
         latitude: result.lat,
     }));
 
+    // the latitude and longitude of the center of locations coordinates
+    const center = getCenter(coordinates);
 
 
+    const [viewport, setViewport] = useState({
+        width: "100%",
+        height: '100%',
+        latitude: center.latitude,
+        longitude: center.longitude,
+        zoom: 11,
+    });
 
 
 
