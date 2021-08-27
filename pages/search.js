@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {useRouter} from "next/router";
 import { format } from "date-fns";
+import InfoCard from "../components/InfoCard";
 
 const Search = ({searchResults}) => {
 
@@ -54,6 +55,11 @@ const Search = ({searchResults}) => {
                         <p className="button">Rooms and Beds</p>
                         <p className="button">More filters</p>
                     </div>
+
+                    {searchResults.map(({img, location, title, description, star, price}) => (
+                        <InfoCard key={img} img={img} location={location} title={title} description={description} />
+                    ))}
+
                 </section>
             </main>
 
