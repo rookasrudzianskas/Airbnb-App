@@ -32,7 +32,6 @@ const Map = ({searchResults}) => {
     });
 
 
-
     return (
         <ReactMapGL
             mapStyle="mapbox://styles/rokasr/cksucwm2w00j817rszggndqdl"
@@ -52,7 +51,7 @@ const Map = ({searchResults}) => {
                         offsetLeft={-20}
                         offsetRight={-10}
                     >
-                        <p className="cursor-pointer text-2xl animate-bounce">
+                        <p onClick={() => setSelectedLocation(result)} className="cursor-pointer text-2xl animate-bounce">
                             ✅
                         </p>
                     </Marker>
