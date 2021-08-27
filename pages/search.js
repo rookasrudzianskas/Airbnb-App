@@ -62,3 +62,11 @@ const Search = () => {
 };
 
 export default Search;
+
+
+// to get some params or something from context
+export async function getServerSideProps(context) {
+    const searchResults = await fetch('https://links.papareact.com/isz').then(res => res.json());
+
+
+}
