@@ -51,10 +51,14 @@ const Map = ({searchResults}) => {
                         offsetLeft={-20}
                         offsetRight={-10}
                     >
-                        <p onClick={() => setSelectedLocation(result)} className="cursor-pointer text-2xl animate-bounce">
-                            ✅
+                        <p role="img" onClick={() => setSelectedLocation(result)} aria-label="push-pin" className="cursor-pointer text-2xl animate-bounce">
+                            😅
                         </p>
                     </Marker>
+
+                {/*    this is the popup, which should show, if we click on the marker  */}
+
+
                 </div>
             ))}
 
