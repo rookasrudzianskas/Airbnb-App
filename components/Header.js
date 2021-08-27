@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Image from "next/image";
-import { SearchIcon, GlobeAltIcon, MenuIcon, UserCircleIcon, UserIcon } from '@heroicons/react/solid';
+import { SearchIcon, GlobeAltIcon, MenuIcon, UserCircleIcon, UsersIcon } from '@heroicons/react/solid';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
@@ -60,13 +60,20 @@ const Header = () => {
 
 
             {searchInput && (
-            <div>
+            <div className="flex flex-col col-span-3 mx-auto mt-5">
                 <DateRangePicker
                     ranges={[selectionRange]}
                     minDate={new Date()}
                     rangeColors={["#FD5B61"]}
                     onChange={handleSelect}
                 />
+
+                <div className="flex items-center border-b mb-4">
+                    <h2 className="text-2xl flex-grow font-semibold">Number of Guests</h2>
+
+                    <UsersIcon className="h-5" />
+                    <input type="number" className="w-12 pl-2 text-lg outline-none text-red-400 placeholder-red-400" min="1" placeholder="0"/>
+                </div>
             </div>
             )}
 
