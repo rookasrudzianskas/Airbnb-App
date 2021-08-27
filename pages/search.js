@@ -57,7 +57,7 @@ const Search = ({searchResults}) => {
                     </div>
 
                     {searchResults.map(({img, location, title, description, star, price}) => (
-                        <InfoCard key={img} img={img} location={location} title={title} description={description} />
+                        <InfoCard key={img} img={img} location={location} title={title} description={description} star={star} price={price} />
                     ))}
 
                 </section>
