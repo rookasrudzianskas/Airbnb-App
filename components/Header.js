@@ -3,10 +3,19 @@ import Image from "next/image";
 import { SearchIcon, GlobeAltIcon, MenuIcon, UserCircleIcon, UserIcon } from '@heroicons/react/solid';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
+import { DateRangePicker } from 'react-date-range';
 
 const Header = () => {
 
     const [searchInput, setSearchInput] = useState('');
+    const [startDate, setStartDate] = useState(new Date());
+    const [endDate, setEndDate] = useState(new Date());
+
+    const selectionRange = {
+        startDate: startDate,
+        endDate: endDate,
+        key: 'Selection',
+    }
 
     return (
         <header className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
@@ -44,7 +53,9 @@ const Header = () => {
 
             {searchInput && (
             <div>
-
+                <DateRangePicker
+                    ranges={[selectionRange]}
+                />
             </div>
             )}
 
