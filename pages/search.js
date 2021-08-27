@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {useRouter} from "next/router";
+import { format } from "date-fns";
 
 const Search = () => {
 
@@ -23,6 +24,10 @@ const Search = () => {
         checkForNull();
     }, []);
 
+    const formattedStartDate = format(new Date(startDate), "dd MMM yy");
+    const formattedEndDate = format(new Date(endDate), "dd MMM yy");
+    const range = `${formattedStartDate} - ${formattedEndDate}`;
+
 
     return (
 
@@ -37,9 +42,9 @@ const Search = () => {
 
             <main className="flex">
                 <section className="flex-grow pt-14 px-6">
-                    <p className="text-xs">300+ stays for 5 number of guests</p>
+                    <p className="text-xs">300+ stays - {range} - for {numberOfGuests > 1 ? `${numberOfGuests} number of guests.` : "one guest."} </p>
 
-                    <h1 className="text-3xl font-semibold mt-2 mb-6">Stays in Mars</h1>
+                    <h1 className="text-3xl font-semibold mt-2 mb-6">Stays in {location}</h1>
 
                     <div className="hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap">
                         <p className="button">Cancellation Flexibility</p>
