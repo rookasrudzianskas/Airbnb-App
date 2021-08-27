@@ -93,7 +93,7 @@ const Search = ({searchResults}) => {
                 </section>
 
                 <section className="hidden xl:inline-flex xl:min-w-[600px]">
-                    <Map />
+                    <Map searchResults={searchResults} />
                 </section>
 
             </main>
@@ -117,4 +117,4 @@ export async function getServerSideProps(context) {
     }
 }
 
-// done, left maps integration
+// done, gets the object with data.

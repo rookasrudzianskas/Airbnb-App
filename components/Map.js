@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import ReactMapGL from 'react-map-gl';
 import geolib from 'geolib';
+import getCenter from "geolib/es/getCenter";
 
 const Map = () => {
 
