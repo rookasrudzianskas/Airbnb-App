@@ -1,10 +1,11 @@
 import React from 'react';
+import Image from "next/image";
 
 const LargeCard = ({img, title, description, buttonText}) => {
     return (
-        <div>
+        <section>
 
-        </div>
+        </section>
     );
 };
 
