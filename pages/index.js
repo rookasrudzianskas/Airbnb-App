@@ -18,6 +18,10 @@ export default function Home({exploreData}) {
                 <h2 className="text-4xl font-semibold pb-5" >Explore Nearby</h2>
 
                 {/*pull some data from api*/}
+                {/* very clever stuff in here*/}
+                {exploreData?.map(item => (
+                    <h1>{item.location}</h1>
+                ))}
             </section>
         </main>
     </div>
@@ -28,9 +32,9 @@ export default function Home({exploreData}) {
 // static side rendering, works just in the pages folder
 
 export async function getStaticProps() {
-    const exploreData = await fetch('https://links.papareact.com/pyp').then((res) => {
+    const exploreData = await fetch('https://links.papareact.com/pyp').then((res) =>
         res.json()
-    });
+    );
 
     return {
         props: {
