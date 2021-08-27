@@ -11,6 +11,8 @@ const Map = ({searchResults}) => {
     // object
     // here we have formed the object to get the center
 
+    const [selectedLocation, setSelectedLocation] = useState({});
+
     const coordinates = searchResults.map(result => ({
         // this will return the object, each time it runs
         longitude: result.long,
