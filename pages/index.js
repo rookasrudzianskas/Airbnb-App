@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import SmallCard from "../components/SmallCard";
 
-export default function Home({exploreData}) {
+export default function Home({exploreData, cardsData}) {
   return (
     <div className="">
       <Head>
@@ -26,6 +26,12 @@ export default function Home({exploreData}) {
                     ))}
                 </div>
             </section>
+
+
+            <section className="">
+                <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
+
+            </section>
         </main>
     </div>
   )
@@ -39,10 +45,16 @@ export async function getStaticProps() {
         res.json()
     );
 
+    const cardsData = await fetch('https://links.papareact.com/zp1').then((res) =>
+        res.json()
+    );
+
+
     return {
         props: {
             // passes data back from the server to the functional component in the browser level
             exploreData: exploreData,
+            cardsData: cardsData,
         }
     }
 }
