@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 export default function Home({exploreData, cardsData}) {
   return (
-    <div className="">
+    <div className="scrollbar-hide">
       <Head>
         <title>Rookas Airbnb</title>
         <link rel="icon" href="/favicon.png" />
