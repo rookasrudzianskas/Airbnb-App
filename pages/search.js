@@ -13,6 +13,14 @@ const Search = () => {
 
             <Header />
 
+            <main className="flex">
+                <section>
+                    <p className="text-xs">300+ stays for 5 number of guests</p>
+
+                    <h1 className="text-3xl font-semibold mt-2 mb-6">Stays in Mars</h1>
+                </section>
+            </main>
+
             <Footer />
         </div>
     );
