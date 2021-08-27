@@ -9,9 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-        <div>
             <Header />
-        </div>
     {/*    Banner   */}
     </div>
   )
