@@ -3,9 +3,12 @@ import ReactMapGL from 'react-map-gl';
 
 const Map = () => {
     return (
-        <div className="">
+        <ReactMapGL
+            mapStyle="mapbox://styles/rokasr/cksucwm2w00j817rszggndqdl"
+            mapboxApiAccessToken=''
+        >
 
-        </div>
+        </ReactMapGL>
     );
 };
 
