@@ -23,3 +23,10 @@ export default function Home() {
     </div>
   )
 }
+
+
+// static side rendering
+
+export async function getStaticProps() {
+
+}
