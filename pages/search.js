@@ -38,7 +38,7 @@ const Search = () => {
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
-            <Header />
+            <Header placeholder={`${location} | ${range} | ${numberOfGuests} guests`} />
 
             <main className="flex">
                 <section className="flex-grow pt-14 px-6">
