@@ -57,8 +57,8 @@ const Search = ({searchResults}) => {
                     </div>
 
                     <div className="flex flex-col">
-                        {searchResults.map(({img, location, title, description, star, price}) => (
-                            <InfoCard key={img} img={img} location={location} title={title} description={description} star={star} price={price} />
+                        {searchResults.map(({img, location, title, description, star, price, total}) => (
+                            <InfoCard key={img} total={total} img={img} location={location} title={title} description={description} star={star} price={price} />
                         ))}
                     </div>
 
