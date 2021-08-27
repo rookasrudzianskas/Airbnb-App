@@ -50,7 +50,9 @@ const Map = ({searchResults}) => {
                         offsetLeft={-20}
                         offsetRight={-10}
                     >
-
+                        <p className="cursor-pointer text-2xl animate-bounce">
+                            ✅
+                        </p>
                     </Marker>
                 </div>
             ))}
