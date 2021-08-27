@@ -20,7 +20,9 @@ const Search = () => {
                     <h1 className="text-3xl font-semibold mt-2 mb-6">Stays in Mars</h1>
 
                     <div className="hidden lg:inline-flex">
-                        <p className="">Cancellation Flexibility</p>
+                        <p className="button">Cancellation Flexibility</p>
+
+                        <p className="button">Type of Place</p>
                     </div>
                 </section>
             </main>

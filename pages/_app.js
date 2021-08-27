@@ -1,5 +1,5 @@
 import "nprogress/nprogress.css";
-// import "../styles/globals.css";
+import "../styles/global.css";
 import Head from "next/head";
 import NProgress from "nprogress";
 import Router from "next/router";
