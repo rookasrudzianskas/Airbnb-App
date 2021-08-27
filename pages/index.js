@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 
-export default function Home() {
+export default function Home({exploreData}) {
   return (
     <div className="">
       <Head>
@@ -31,4 +31,11 @@ export async function getStaticProps() {
     const exploreData = await fetch('https://links.papareact.com/pyp').then((res) => {
         res.json()
     });
+
+    return {
+        props: {
+            // passes data back from the server to the functional component in the browser level
+            exploreData: exploreData,
+        }
+    }
 }
