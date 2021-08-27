@@ -3,7 +3,7 @@ import ReactMapGL from 'react-map-gl';
 import geolib from 'geolib';
 import getCenter from "geolib/es/getCenter";
 
-const Map = () => {
+const Map = ({searchResults}) => {
 
     const [viewport, setViewport] = useState({
         width: "100%",
@@ -11,7 +11,17 @@ const Map = () => {
         latitude: 37.7577,
         longitude: -122.4376,
         zoom: 11,
-    })
+    });
+
+    // transform the searchResults object, to the object for the lat and long object.
+    //     { latitude: 52.516272, longitude: 13.377722 },
+    // object
+
+    const coordinates = searchResults.map(result => (
+
+    ));
+
+
 
 
     return (
