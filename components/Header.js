@@ -24,6 +24,9 @@ const Header = () => {
         key: 'selection',
     }
 
+    const resetInput = () => {
+        setSearchInput("");
+    }
 
 
     return (
@@ -78,13 +81,13 @@ const Header = () => {
                         onChange={(e) => setNumberOfGuests(e.target.value)}
                         type="number" className="w-12 pl-2 text-lg outline-none text-red-400 placeholder-red-400" min={1} placeholder="1"/>
                 </div>
-                
-                <div>
-                    <button></button>
-                    <button></button>    
+
+                <div className="flex">
+                    <button className="flex-grow text-gray-400" onClick={resetInput}>Cancel</button>
+                    <button className="flex-grow text-red-500">Search</button>
                 </div>
-                
-                
+
+
             </div>
             )}
 
