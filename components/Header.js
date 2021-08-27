@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header = () => {
     return (
-        <header className="sticky top-0">
+        <header className="sticky top-0 z-50">
 
 
             <div className="relative flex items-center h-10 cursor-pointer my-auto">
