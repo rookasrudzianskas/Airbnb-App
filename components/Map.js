@@ -42,6 +42,19 @@ const Map = ({searchResults}) => {
             onViewportChange={(nextViewport) => setViewport(nextViewport) }
         >
 
+            {searchResults.map(result => (
+                <div key={result.long}>
+                    <Marker
+                        longitude={result.long}
+                        latitude={result.lat}
+                        offsetLeft={-20}
+                        offsetRight={-10}
+                    >
+
+                    </Marker>
+                </div>
+            ))}
+
         </ReactMapGL>
     );
 };
