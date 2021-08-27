@@ -10,7 +10,7 @@ const Header = () => {
             {/* left    */}
                 <Image
                     src="https://links.papareact.com/qd3"
-
+                    layout='fill'
                 />
             </div>
 
