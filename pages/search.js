@@ -63,14 +63,22 @@ const Search = ({searchResults}) => {
                     </div>
 
 
-                    <div className="flex flex-row my-10 cursor-pointer">
-                       <div className="flex flex-1 px-10">
+                    <div className="flex justify-between flex-row my-10 cursor-pointer">
+                       <div className="flex px-10">
                            <div className="bg-gray-200 p-3 rounded-full">
                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray">
                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
                            </svg>
                            </div>
                        </div>
+
+                        {/*<div>*/}
+                        {/*<div className="flex" >*/}
+                        {/*    <div className="bg-gray-200 p-3 rounded-full">*/}
+                        {/*        <p className="text-lg text-gray-500">1</p>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*</div>*/}
 
                         <div className="flex px-10" >
                             <div className="bg-gray-200 p-3 rounded-full">
