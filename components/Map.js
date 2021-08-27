@@ -18,6 +18,9 @@ const Map = () => {
             mapboxApiAccessToken={process.env.mapbox_key}
 
             {...viewport}
+
+// lets to scroll in the map
+            onViewportChange={(nextViewport) => setViewport(nextViewport) }
         >
 
         </ReactMapGL>
