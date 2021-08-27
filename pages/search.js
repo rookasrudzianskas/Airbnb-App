@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -10,7 +10,18 @@ const Search = () => {
 
     // this is to access the router variables
     // console.log(router.query);
+    // we destructure all the variables
     const {location, startDate, endDate, numberOfGuests} = router.query;
+
+    const checkForNull = () => {
+        if(!location || !startDate || !endDate || !numberOfGuests) {
+            router.push('/');
+        }
+    }
+
+    useEffect(() => {
+        checkForNull();
+    }, []);
 
 
     return (
