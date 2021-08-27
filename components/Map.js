@@ -18,7 +18,7 @@ const Map = ({searchResults}) => {
         // this will return the object, each time it runs
         longitude: result.long,
         latitude: result.lat,
-    }));
+    }))
 
     // the latitude and longitude of the center of locations coordinates
     const center = getCenter(coordinates);
