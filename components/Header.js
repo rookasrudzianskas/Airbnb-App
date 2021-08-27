@@ -10,6 +10,7 @@ const Header = () => {
     const [searchInput, setSearchInput] = useState('');
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
+    const [numberOfGuests, setNumberOfGuests] = useState(1);
 
     const handleSelect = (ranges) => {
         setStartDate(ranges.selection.startDate);
@@ -72,7 +73,10 @@ const Header = () => {
                     <h2 className="text-2xl flex-grow font-semibold">Number of Guests</h2>
 
                     <UsersIcon className="h-5" />
-                    <input type="number" className="w-12 pl-2 text-lg outline-none text-red-400 placeholder-red-400" min="1" placeholder="0"/>
+                    <input
+                        value={numberOfGuests}
+                        onChange={(e) => setNumberOfGuests(e.target.value)}
+                        type="number" className="w-12 pl-2 text-lg outline-none text-red-400 placeholder-red-400" min="1" placeholder="1"/>
                 </div>
             </div>
             )}
