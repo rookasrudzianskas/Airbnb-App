@@ -118,9 +118,3 @@ export async function getServerSideProps(context) {
 }
 
 // done, left maps integration
-
-// mapbox
-// mapbox://styles/rokasr/cksucwm2w00j817rszggndqdl style
-// access token
-// pk.eyJ1Ijoicm9rYXNyIiwiYSI6ImNrc3VjdHM4YjBrdXcyb2xzaDlhNnJjbjMifQ.QptDnLGGkB4ffA97KWL6DA
-
