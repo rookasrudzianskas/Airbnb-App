@@ -16,12 +16,15 @@ const Map = ({searchResults}) => {
     // transform the searchResults object, to the object for the lat and long object.
     //     { latitude: 52.516272, longitude: 13.377722 },
     // object
+    // here we have formed the object to get the center
 
     const coordinates = searchResults.map(result => ({
         // this will return the object, each time it runs
         longitude: result.long,
         latitude: result.lat,
     }));
+
+
 
 
 
