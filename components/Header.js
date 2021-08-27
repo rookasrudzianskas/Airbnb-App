@@ -4,7 +4,7 @@ import { SearchIcon, GlobeAltIcon, MenuIcon, UserCircleIcon, UserIcon } from '@h
 
 const Header = () => {
 
-    const [searchInput, setSearchInput] = useState();
+    const [searchInput, setSearchInput] = useState('');
 
     return (
         <header className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10">
