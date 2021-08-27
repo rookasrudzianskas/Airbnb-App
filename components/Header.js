@@ -2,9 +2,26 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div>
+        <header>
 
-        </div>
+
+            <div>
+            {/* left    */}
+
+            </div>
+
+            <div>
+            {/*    middle   */}
+
+            </div>
+
+            <div>
+            {/*    right    */}
+
+            </div>
+
+
+        </header>
     );
 };
 
