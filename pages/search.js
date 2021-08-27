@@ -42,7 +42,7 @@ const Search = ({searchResults}) => {
 
             <Header placeholder={`${location} | ${range} | ${numberOfGuests} guests`} />
 
-            <main className="flex">
+            <main className="flex scrollbar-hide">
                 <section className="flex-grow pt-14 px-6">
                     <p className="text-xs">300+ stays - {range} - for {numberOfGuests > 1 ? `${numberOfGuests} number of guests.` : "one guest."} </p>
 
