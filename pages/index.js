@@ -32,8 +32,8 @@ export default function Home({exploreData, cardsData}) {
             <section className="">
                 <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
 
-                {cardsData.map(item => (
-                    <MediumCard />
+                {cardsData?.map(({img, title}) => (
+                    <MediumCard key={img} img={img} title={title}/>
                 ))}
             </section>
         </main>
