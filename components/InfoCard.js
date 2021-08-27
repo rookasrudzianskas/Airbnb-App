@@ -11,7 +11,7 @@ const InfoCard = ({img, location, title, description, star, price, total}) => {
                     src={img}
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-lg"
+                    className="rounded-2xl"
                 />
             </div>
 
