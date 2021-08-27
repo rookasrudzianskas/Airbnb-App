@@ -18,6 +18,10 @@ const progress = new ProgressBar({
 // Router.events.on("routeChangeComplete", () => NProgress.done());
 // Router.events.on("routeChangeError", () => NProgress.done());
 
+Router.events.on("routeChangeStart", () => progress.start());
+Router.events.on("routeChangeComplete", () => progress.done());
+Router.events.on("routeChangeError", () => progress.done());
+
 function MyApp({ Component, pageProps }) {
   return (
       <>
