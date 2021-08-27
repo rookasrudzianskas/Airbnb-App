@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 import geolib from 'geolib';
 import getCenter from "geolib/es/getCenter";
+import Image from "next/image";
 
 const Map = ({searchResults}) => {
 
@@ -58,6 +59,31 @@ const Map = ({searchResults}) => {
 
                 {/*    this is the popup, which should show, if we click on the marker  */}
 
+                    {selectedLocation.long === result.long ? (
+
+                        <div className="">
+                        <Popup
+                            onClose={() => setSelectedLocation({})}
+                            latitude={result.lat}
+                            longitude={result.long}
+                            closeOnClick={true}
+                        >
+
+                            <div className="w-48 h-24 bg-red-500 ">
+                                <div className="h-12 w-12">
+                                <p className="truncate z-100 text-white">{result.title}</p>
+                                    <Image
+                                        layout="fill"
+                                        src={result.img}
+                                        objectFit="cover"
+                                        className="rounded-lg overflow-hidden"
+                                    />
+                                </div>
+                            </div>
+
+                        </Popup>
+                        </div>
+                    ): false}
 
                 </div>
             ))}
