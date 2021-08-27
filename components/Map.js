@@ -17,9 +17,11 @@ const Map = ({searchResults}) => {
     //     { latitude: 52.516272, longitude: 13.377722 },
     // object
 
-    const coordinates = searchResults.map(result => (
-
-    ));
+    const coordinates = searchResults.map(result => ({
+        // this will return the object, each time it runs
+        longitude: result.long,
+        latitude: result.lat,
+    }));
 
 
 
